@@ -98,7 +98,6 @@ body {
 }
 /* FOOTER */
 footer {
-  margin-top: 80px;
   background-color: #000;
   color: #ccc;
   text-align: center;
@@ -107,9 +106,4 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
+
