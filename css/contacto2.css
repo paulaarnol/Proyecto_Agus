@@ -113,7 +113,7 @@ footer {
   background-color: #000 !important;
   color: #fff;
   text-align: center;
-  padding: 6px 0; /* 👈 más fino */
+  padding: 2px 0; /* 👈 más fino */
   border-top: 1px solid #ffcc33;
   width: 100%;
   position: relative;
