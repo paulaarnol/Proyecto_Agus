@@ -13,7 +13,7 @@ html, body {
   color: #fff;
 }
 
-/* Estructura general para empujar el footer hacia abajo */
+/* Estructura general */
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  flex: 1; /* esto empuja el footer al fondo */
+  flex: 1;
 }
 
 /* NAVBAR */
@@ -113,16 +113,15 @@ footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
-  border-top: 2px solid #ffcc33;
+  padding: 15px 0;
+  border-top: 1px solid #ffcc33;
   width: 100%;
   margin-top: 40px;
-  box-shadow: 0 -4px 15px rgba(255, 204, 51, 0.1);
 }
 
 footer p {
-  color: #ccc;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #fff;
 }
 
 footer span {
