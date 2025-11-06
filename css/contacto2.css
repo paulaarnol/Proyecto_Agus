@@ -113,8 +113,8 @@ footer {
   background-color: #000 !important;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  border-top: 2px solid #ffcc33;
+  padding: 6px 0; /* 👈 más fino */
+  border-top: 1px solid #ffcc33;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -124,6 +124,10 @@ footer {
   margin: 0 !important;
 }
 
+footer p {
+  color: #ccc;
+  font-size: 0.9rem; /* opcional, podés bajarlo a 0.85 si querés aún más fino */
+}
 /* Evita espacios por padding/margins arriba */
 .contacto, main, body {
   margin: 0 !important;
