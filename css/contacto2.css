@@ -107,20 +107,21 @@ main {
   color: #ffcc33;
   margin-bottom: 5px;
 }
-
-/* FOOTER */
+/* FOOTER (igual al de tu imagen correcta) */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 12px 0;
   border-top: 1px solid #ffcc33;
   width: 100%;
-  margin-top: 40px;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #fff;
 }
 
