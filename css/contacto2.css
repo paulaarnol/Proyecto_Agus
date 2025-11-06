@@ -96,57 +96,6 @@ body {
   margin-bottom: 5px;
 }
 
-/* FORMULARIO */
-.formulario {
-  background-color: #1a1a1a;
-  border: 2px solid #ffcc33;
-  border-radius: 16px;
-  padding: 30px 25px;
-  max-width: 600px;
-  margin: 0 auto;
-  box-shadow: 0 0 25px rgba(255, 204, 51, 0.1);
-}
-
-.formulario h2 {
-  color: #ffcc33;
-  margin-bottom: 20px;
-}
-
-.formulario input,
-.formulario textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 8px;
-  background-color: #222;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-}
-
-.formulario input:focus,
-.formulario textarea:focus {
-  border: 2px solid #ffcc33;
-  background-color: #1a1a1a;
-}
-
-.formulario button {
-  background-color: #ffcc33;
-  color: #000;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.formulario button:hover {
-  background-color: #e6b800;
-}
-
 /* FOOTER */
 footer {
   margin-top: 80px;

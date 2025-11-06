@@ -96,3 +96,20 @@ body {
   background-color: #ff9900;
   transform: scale(1.05);
 }
+/* FOOTER */
+footer {
+  margin-top: 80px;
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ffcc33;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
