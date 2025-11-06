@@ -202,11 +202,3 @@ button:hover {
     transform: translateY(0);
   }
 }
-#contenedor-reseñas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px; /* aumenté el espacio entre reseñas */
-  max-width: 650px;
-  margin: 0 auto;
-}
