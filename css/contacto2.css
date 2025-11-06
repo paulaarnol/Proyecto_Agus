@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* RESETEO GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background-color: #111;
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* fondo uniforme sin gris */
   color: #fff;
 }
 
@@ -50,7 +53,7 @@ body {
 .contacto {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+  background: #000; /* antes tenía degradado, ahora es sólido */
 }
 
 .contacto h1 {
@@ -96,6 +99,7 @@ body {
   margin-bottom: 5px;
 }
 
+/* FOOTER */
 footer {
   background-color: #000;
   color: #fff;
@@ -104,37 +108,6 @@ footer {
   border-top: 2px solid #ffcc33;
   position: relative;
   bottom: 0;
-  width: 100%;
-  margin-top: 0;
-}
-
-/* Quita cualquier margen o fondo gris del body o del contenedor */
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-}
-
-/* Si el footer está pegado al final de un contenedor, esto lo corrige */
-.main-content {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-/* Arregla el espacio entre la sección y el footer */
-.contacto {
-  margin-bottom: 0;
-  padding-bottom: 60px; /* para que respire el contenido */
-  background: linear-gradient(180deg, #111 0%, #000 100%);
-}
-
-/* Asegura que el footer se pegue sin franja gris */
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  border-top: 2px solid #ffcc33;
-  position: relative;
   width: 100%;
   margin-top: 0;
 }
