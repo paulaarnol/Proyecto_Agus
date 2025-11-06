@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #000;
+  border-bottom: 2px solid #ffcc33;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc33;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcc33;
+}
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+}
+
+.contacto h1 {
+  color: #ffcc33;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(255, 204, 51, 0.4);
+}
+
+.contacto p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.info-item {
+  background-color: #1a1a1a;
+  border: 2px solid #ffcc33;
+  border-radius: 12px;
+  padding: 20px 25px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.1);
+  transition: 0.3s;
+}
+
+.info-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(255, 204, 51, 0.3);
+}
+
+.info-item h3 {
+  color: #ffcc33;
+  margin-bottom: 5px;
+}
+
+/* FORMULARIO */
+.formulario {
+  background-color: #1a1a1a;
+  border: 2px solid #ffcc33;
+  border-radius: 16px;
+  padding: 30px 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(255, 204, 51, 0.1);
+}
+
+.formulario h2 {
+  color: #ffcc33;
+  margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border: 2px solid #ffcc33;
+  background-color: #1a1a1a;
+}
+
+.formulario button {
+  background-color: #ffcc33;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #e6b800;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 80px;
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ffcc33;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
