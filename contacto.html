@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro - Burger House</title>
+  <title>Reseñas - Burger House</title>
   <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
@@ -13,35 +13,61 @@
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="contacto.html" class="active">Registro</a></li>
-        <li><a href="php/lista_registros.php">Ver registros</a></li>
+        <li><a href="reseñas.html" class="active">Reseñas</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="contacto">
-    <h1>Registrate en Burger House</h1>
-    <p>Dejanos tus datos y sé parte de nuestra comunidad 🍔</p>
+    <h1>Deja una reseña de Burger House</h1>
+    <p>Contanos tu experiencia y ayudá a otros a conocer Burger House 🍔</p>
 
-  <form class="formulario" action="php/registrar.php" method="POST">
-    <div class="campo">
-      <label>Nombre:</label>
-      <input type="text" name="nombre" required>
-    </div>
+    <!-- FORMULARIO -->
+    <form class="formulario" action="php/registrar.php" method="POST" id="formReseña">
+      <div class="campo">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+      </div>
 
-    <div class="campo">
-      <label>Email:</label>
-      <input type="email" name="email" required>
-    </div>
+      <div class="campo">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+      </div>
 
-    <div class="campo">
-      <label>Mensaje (opcional):</label>
-      <textarea name="mensaje" rows="5"></textarea>
-    </div>
+      <div class="campo">
+        <label>Reseña:</label>
+        <textarea name="mensaje" rows="5" required></textarea>
+      </div>
 
-    <button type="submit">Registrarme</button>
-  </form>
+      <button type="submit">Enviar reseña</button>
+    </form>
 
-  </main>
+   <!-- LISTA DE RESEÑAS -->
+<section class="lista-reseñas">
+  <h2>Reseñas de nuestros clientes</h2>
+  <div id="contenedor-reseñas">
+    <p>Cargando reseñas...</p>
+  </div>
+</section>
+<script>
+  // Cargar reseñas automáticamente desde el PHP
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("php/mostrar_reseñas.php")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("contenedor-reseñas").innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error al cargar las reseñas:", error);
+        document.getElementById("contenedor-reseñas").innerHTML =
+          "<p style='color:red;'>No se pudieron cargar las reseñas 😞</p>";
+      });
+  });
+</script>
+
+
+  </div>
+</section>
+
 </body>
 </html>

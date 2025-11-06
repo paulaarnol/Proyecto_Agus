@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $clave = "";
-$base_datos = "proyecto_agus"; // tu base de datos
+$base_datos = "burger_db"; // tu base de datos
 
 $conexion = new mysqli($servidor, $usuario, $clave, $base_datos);
 
