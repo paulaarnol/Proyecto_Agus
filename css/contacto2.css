@@ -108,26 +108,33 @@ main {
   margin-bottom: 5px;
 }
 /* FOOTER (igual al de tu imagen correcta) */
-/* ---- FIX FOOTER PEGADO ABAJO ---- */
 footer {
-  background-color: #000 !important;
+  background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 15px 0; /* 👈 más fino */
+  padding: 15px 0;
   border-top: 2px solid #ffcc33;
-  width: 100%;
   position: relative;
   bottom: 0;
-  left: 0;
-  z-index: 10;
-  box-shadow: none !important;
-  margin: 0 !important;
+  width: 100%;
+  margin-top: 0;
 }
 
-footer p {
-  color: #ccc;
-  font-size: 0.7rem; /* opcional, podés bajarlo a 0.85 si querés aún más fino */
+/* Quita cualquier margen o fondo gris del body o del contenedor */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
 }
+
+/* Si el footer está pegado al final de un contenedor, esto lo corrige */
+.main-content {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+
 /* Evita espacios por padding/margins arriba */
 .contacto, main, body {
   margin: 0 !important;
