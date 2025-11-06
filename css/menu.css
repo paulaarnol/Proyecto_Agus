@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #000;
+  border-bottom: 2px solid #ffcc33;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc33;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcc33;
+}
+
+/* MENU PRINCIPAL */
+.menu {
+  text-align: center;
+  padding: 70px 30px;
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+}
+
+.title {
+  font-size: 3rem;
+  color: #ffcc33;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px rgba(255, 204, 51, 0.4);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+/* GALERÍA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 2px solid #ffcc33;
+  border-radius: 16px;
+  padding: 15px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 204, 51, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ffcc33;
+}
+
+.card h3 {
+  color: #ffcc33;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 8px 0 10px;
+  line-height: 1.4;
+}
+
+.card span {
+  display: inline-block;
+  background-color: #ffcc33;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+}

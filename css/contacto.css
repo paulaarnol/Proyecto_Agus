@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #000;
+  border-bottom: 2px solid #ffcc33;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc33;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcc33;
+}
+
+/* CONTACTO */
+.contacto {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contacto h1 {
+  color: #ffcc33;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.formulario {
+  background-color: #1a1a1a;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 16px;
+  border: 2px solid #ffcc33;
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.2);
+}
+
+.campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffcc33;
+  font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border: 2px solid #ffcc33;
+  background-color: #333;
+}
+
+button {
+  background-color: #ffcc33;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.03);
+}

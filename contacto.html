@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Burger House</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍔 Burger House</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contacto.html" class="active">Registro</a></li>
+        <li><a href="php/lista_registros.php">Ver registros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto">
+    <h1>Registrate en Burger House</h1>
+    <p>Dejanos tus datos y sé parte de nuestra comunidad 🍔</p>
+
+  <form class="formulario" action="php/registrar.php" method="POST">
+    <div class="campo">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required>
+    </div>
+
+    <div class="campo">
+      <label>Email:</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="campo">
+      <label>Mensaje (opcional):</label>
+      <textarea name="mensaje" rows="5"></textarea>
+    </div>
+
+    <button type="submit">Registrarme</button>
+  </form>
+
+  </main>
+</body>
+</html>
