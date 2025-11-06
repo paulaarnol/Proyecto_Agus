@@ -108,8 +108,9 @@ main {
   margin-bottom: 5px;
 }
 /* FOOTER (igual al de tu imagen correcta) */
+/* ---- FIX FOOTER PEGADO ABAJO ---- */
 footer {
-  background-color: #000;
+  background-color: #000 !important;
   color: #fff;
   text-align: center;
   padding: 12px 0;
@@ -118,13 +119,14 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
+  z-index: 10;
+  box-shadow: none !important;
+  margin: 0 !important;
 }
 
-footer p {
-  font-size: 0.95rem;
-  color: #fff;
-}
-
-footer span {
-  color: #ffcc33;
+/* Evita espacios por padding/margins arriba */
+.contacto, main, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #0a0a0a !important;
 }
